@@ -6,6 +6,8 @@
     margin: 0;
 }
 
+/* utilities */
+
 button{   
     padding: 6px 15px;
     border: 0;
@@ -30,14 +32,17 @@ button:hover{
 button:active{
     transform: scale(1);
 }
-
-/* utilities */
-
-
   
 /* content */
 
 /***HEADER***/
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+}
 
 /*top-header*/
 
@@ -53,6 +58,10 @@ button:active{
 /* / top-header*/
 
 /*bottom-header*/
+
+.dv-navbar{
+    padding: 0;
+}
 
 .nav-item{
     margin-left: 10px;
@@ -79,9 +88,8 @@ button:active{
     position: absolute;
     left: 0;
     top: 80%;
-    width: 100%;
+    width: 100vw;
     background-color: white;
-    border-radius: 5px;
     text-align: center;
 }
 
@@ -94,8 +102,21 @@ button:active{
     display: block;
 }
 
-.ps-dropdown-content a:hover{
-    text-decoration: underline;
+.dropdown-link{
+    border-top: 1px solid gray;
+    text-align: center;
+}
+
+.dropdown-link li{
+    display: inline-block;
+}
+
+.dropdown-link a{ 
+    margin: 0 10px;
+}
+
+.dropdown-link a:hover{
+    color: hsl(222deg 79% 54%);
 }
 
 /*bottom-header*/
@@ -111,6 +132,7 @@ button:active{
     background-size: cover;
     background-position: center;
     color: white;
+    margin-top: 106px;
 }
 
 .jumbotron{
