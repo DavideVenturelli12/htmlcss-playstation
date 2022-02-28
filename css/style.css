@@ -166,8 +166,8 @@ header{
     border-radius: 20px;
 }
 
-.ps5-game-container:hover{
-    transform: ;
+.ps5-game-container img:hover{
+    transform: translateY(-20%);
 }
 
 /* / ps5 game section*/
