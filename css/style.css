@@ -7,9 +7,11 @@
 }
 
 button{   
-    padding: 8px 15px;
+    padding: 6px 15px;
+    border: 0;
     border-radius: 20px;
     color: white;
+    font-weight: 600;
 }
 
 .buy-now{
@@ -17,11 +19,17 @@ button{
     background-color: hsl(15deg 86% 43%);
 }
 
+.discover{
+    background-color: hsl(222deg 79% 54%);
+}
+
 button:hover{
     transform: scale(0.9);
 }
 
-
+button:active{
+    transform: scale(1);
+}
 
 /* utilities */
 
@@ -31,6 +39,8 @@ button:hover{
 
 /***HEADER***/
 
+/*top-header*/
+
 .bg-black{
     background-color: black;
     height: 40px;
@@ -39,6 +49,10 @@ button:hover{
 .bg-black img{
     height: 15px;
 }
+
+/* / top-header*/
+
+/*bottom-header*/
 
 .nav-item{
     margin-left: 10px;
@@ -55,32 +69,42 @@ button:hover{
     background-color: hsl(0deg 0% 21%);
 }
 
-
-/*
-
 .ps-dropdown {
-    position: relative;
+    position: static;
     display: inline-block;
 }
   
 .ps-dropdown-content {
     display: none;
     position: absolute;
+    left: 0;
+    top: 80%;
+    width: 100%;
     background-color: white;
-    border: 1px solid black;
-    height: 200px;
-    z-index: 1;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.ps-dropdown-content a{
+    text-decoration: none;
+    color: black;
 }
   
 .ps-dropdown:hover .ps-dropdown-content {
     display: block;
 }
 
-*/
+.ps-dropdown-content a:hover{
+    text-decoration: underline;
+}
+
+/*bottom-header*/
 
 /*** / HEADER***/
 
 /***MAIN***/
+
+/*jumbotron*/
 
 .jumbotron-container{
     background-image: url(../img/jumbo-bg.png);
@@ -105,3 +129,242 @@ button:hover{
     padding-left: 40px;
 }
 
+/* / jumbotron*/
+
+/*ps5 game section*/
+
+.ps5-game-container{
+    margin: 30px 0;
+    padding: 0 5%;
+}
+
+.returnal-card,
+.ratchet-card {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* / ps5 game section*/
+
+/*play has no limits*/
+
+.no-limits{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.no-limits h5{
+color: hsl(207deg 78% 46%);
+}
+
+.no-limits p{
+    color: gray;
+    font-size: 20px;
+}
+
+/* / play has no limits*/
+
+/*new console*/
+
+.new-console{
+    margin: 30px 0;
+    padding: 0 5%;
+}
+
+.new-console p{
+    color: gray;
+    font-size: 20px;
+}
+
+.new-console button{
+    margin-top: 20px;
+}
+
+.ps5{
+    width: 100%;
+}
+
+.accessories:hover{
+    border-bottom: 2px solid hsl(207deg 78% 46%);
+}
+
+/* / new console*/
+
+/*it takes two*/
+
+.banner-container{
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.game{
+    padding: 10% 0 5%;
+}
+
+.game img{
+    height: 150px;
+}
+
+.game h1{
+    margin: 30px 0;
+}
+
+.banner-info{
+    padding-left: 40px;
+}
+
+
+/* / it takes two*/
+
+/*new game section*/
+
+.new-container{
+    padding: 5% 5%;
+    background-color: hsl(0deg 0% 12%);
+    color: white;
+}
+
+.tony-card,
+.crash-card {
+    width: 100%;
+    border-radius: 20px;
+}
+ .new-card p{
+     margin-top: 20px;
+ }
+
+/* / new game section*/
+
+/*ps4 section*/
+
+.ps4-container{
+    padding: 5% 5%;
+}
+
+.ps4 img{
+    width: 100%;
+}
+
+.ps4 p{
+    color: gray;
+}
+
+/* / ps4 section*/
+
+/*ps plus section*/
+
+.plus-container{
+    padding: 0 5% ;
+    background-color: hsl(20deg 2% 74%);
+}
+
+.plus{
+    margin: 5% 0;
+}
+
+.plus img{
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.plus-games img{
+    width: 100%;
+    display: none;
+}
+
+.explore{
+    background-color: hsl(220deg 4% 86%);
+    color: hsl(223deg 77% 55%);
+}
+
+/* / ps plus section*/
+
+/*ps discount*/
+
+.discount-container{
+    padding: 5% 5%;
+    text-align: center;
+}
+
+.discount-container p{
+    color: gray;
+}
+
+.discount-container img{
+    width: 100%;
+}
+
+/* / ps discount*/
+
+/*ps now section*/
+
+.now-container{
+    padding: 0 5% ;
+    background-color: hsl(230deg 46% 16%);
+    color: white;
+}
+
+.now{
+    margin: 5% 0;
+}
+
+.now p{
+}
+
+.now img{
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.now-games img{
+    width: 100%;
+    display: none;
+}
+
+/* / ps now section*/
+
+/*social section*/
+
+.social-container{
+    padding: 5% 5%;
+    text-align: center;
+}
+
+.social-container img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* / social section*/
+
+/*** / MAIN***/
+
+/***FOOTER***/
+
+.footer-container{
+    padding: 5% 5%;
+    color: white;
+    background-color: hsl(214deg 100% 31%);
+}
+
+.footer-container img{
+    margin-bottom: 20px;
+}
+
+.footer-container li{
+    list-style: none;
+    padding-top: 10px;
+}
+
+.footer-container a{
+    color: white;
+    text-decoration: none;
+}
+
+#more-info{
+    text-decoration: underline;
+}
+
+/*** / FOOTER***/
