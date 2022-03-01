@@ -33,7 +33,7 @@
                 <div class="col dv-navbar">
                     <nav class="navbar navbar-expand-xl navbar-light bg-white">
                         <div class="container-fluid">
-                            <a href=""><img src="img/play_logo.svg" alt=""></a>
+                            <a id="home" href=""><img src="img/play_logo.svg" alt=""></a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
@@ -45,6 +45,7 @@
                                     <li class="nav-item ps-dropdown">
                                         <a class="nav-link active" aria-current="page" href="#">
                                             Giochi <i class="fa-solid fa-chevron-down"></i>
+                                            <i class="fa-solid fa-chevron-up"></i>
                                         </a>
                                         <div class="ps-dropdown-content">
                                             <div class="row justify-content-center">
@@ -81,6 +82,7 @@
                                     <li class="nav-item ps-dropdown">
                                         <a class="nav-link active" aria-current="page" href="#">
                                             Hardware <i class="fa-solid fa-chevron-down"></i>
+                                            <i class="fa-solid fa-chevron-up"></i>
                                         </a>
                                         <div class="ps-dropdown-content">
                                             <div class="row justify-content-center">
@@ -117,6 +119,7 @@
                                     <li class="nav-item ps-dropdown">
                                         <a class="nav-link active" aria-current="page" href="#">
                                             Servizi <i class="fa-solid fa-chevron-down"></i>
+                                            <i class="fa-solid fa-chevron-up"></i>
                                         </a>
                                         <div class="ps-dropdown-content">
                                             <div class="row justify-content-center">
@@ -153,6 +156,7 @@
                                     <li class="nav-item ps-dropdown">
                                         <a class="nav-link active" aria-current="page" href="#">
                                             Novità <i class="fa-solid fa-chevron-down"></i>
+                                            <i class="fa-solid fa-chevron-up"></i>
                                         </a>
                                         <div class="ps-dropdown-content">
                                             <div class="row justify-content-center">
@@ -189,6 +193,7 @@
                                     <li class="nav-item ps-dropdown">
                                         <a class="nav-link active" aria-current="page" href="#">
                                             Fai acquisti <i class="fa-solid fa-chevron-down"></i>
+                                            <i class="fa-solid fa-chevron-up"></i>
                                         </a>
                                         <div class="ps-dropdown-content">
                                             <div class="row justify-content-center">
@@ -225,6 +230,7 @@
                                     <li class="nav-item ps-dropdown">
                                         <a class="nav-link active" aria-current="page" href="#">
                                             Supporto <i class="fa-solid fa-chevron-down"></i>
+                                            <i class="fa-solid fa-chevron-up"></i>
                                         </a>
                                         <div class="ps-dropdown-content">
                                             <div class="row justify-content-center">
@@ -264,7 +270,39 @@
                                         <li class="nav-item ps-dropdown">
                                             <a class="nav-link active" aria-current="page" href="#">
                                                 My PlayStation <i class="fa-solid fa-chevron-down"></i>
+                                                <i class="fa-solid fa-chevron-up"></i>
                                             </a>
+                                            <div class="ps-dropdown-content">
+                                                <div class="row justify-content-center">
+                                                    <div class="col-2">
+                                                        <a href="">
+                                                            <img src="img/play-menu-ico.png" alt="">
+                                                            <p>PlayStation 5</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <a href="">
+                                                            <img src="img/play-menu-ico.png" alt="">
+                                                            <p>PlayStation 4</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <a href="">
+                                                            <img src="img/play-menu-ico.png" alt="">
+                                                            <p>PlayStation 3</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 dropdown-link">
+                                                        <ul>
+                                                            <li><a href="">link Supporto</a></li>
+                                                            <li><a href="">link Supporto</a></li>
+                                                            <li><a href="">link Supporto</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </li>
                                         <li class="nav-item login">
                                             <button>Accedi</button>
@@ -291,7 +329,7 @@
     <main>
 
         <!--jumbotron-->
-        <div class="container-fluid jumbotron-container">
+        <div class="container-fluid jumbotron-container" id="home">
             <div class="row jumbotron">
                 <div class="col-12 col-lg-4 jumbo-info">
                     <img src="img/returnal-hero-banner-logo.png" alt="">
@@ -369,7 +407,7 @@
             </div>
             <div class="row justify-content-md-around">
                 <div class="col-4 col-md-2">
-                    <img class="ps5 " src="img/playstation-5-thumb.png" alt="">
+                    <img class="ps5 selected" src="img/playstation-5-thumb.png" alt="">
                 </div>
                 <div class="col-4 col-md-2">
                     <img class="ps5 accessories" src="img/joypad-thumb.png" alt="">
@@ -553,13 +591,11 @@
                 </div>
                 <div class="col-12 g-4  col-md-4">
                     <a href="">
-
                         <img src="img/playstation-store-golden-week-sale-spotlight.jpg" alt="">
                     </a>
                 </div>
                 <div class="col-12 g-4 col-md-4">
                     <a href="">
-
                         <img src="img/playstation-store-free-to-play-spotlight.png" alt="">
                     </a>
                 </div>
@@ -676,7 +712,6 @@
         </section>
     </footer>
     <!-- / FOOTER-->
-
 </body>
 
 </html>

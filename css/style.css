@@ -25,12 +25,20 @@ button{
     background-color: hsl(222deg 79% 54%);
 }
 
-button:hover{
-    transform: scale(0.9);
+.buy-now:hover{    
+    box-shadow: 0 0 0 2px white;
+}
+
+.discover:hover{    
+    box-shadow: 0 0 0 2px black;
 }
 
 button:active{
-    transform: scale(1);
+    filter: opacity(0.8);
+}
+
+.explore:hover{
+    box-shadow: 0 0 0 2px hsl(222deg 79% 54%);   
 }
   
 /* content */
@@ -109,7 +117,7 @@ header{
 
 .dropdown-link li{
     display: inline-block;
-}
+}s
 
 .dropdown-link a{ 
     margin: 0 10px;
@@ -117,6 +125,18 @@ header{
 
 .dropdown-link a:hover{
     color: hsl(222deg 79% 54%);
+}
+
+.fa-chevron-up{
+    display: none;
+}
+
+.ps-dropdown:hover .fa-chevron-down{
+    display: none;
+}
+
+.ps-dropdown:hover .fa-chevron-up{
+    display: inline-block;
 }
 
 /*bottom-header*/
@@ -170,6 +190,14 @@ header{
     transform: translateY(-20%);
 }
 
+.returnal-card:hover{
+    box-shadow: 0 0 0 4px hsl(222deg 79% 54%);   
+}
+
+.ratchet-card:hover{
+    box-shadow: 0 0 0 4px hsl(222deg 79% 54%);   
+}
+
 /* / ps5 game section*/
 
 /*play has no limits*/
@@ -180,7 +208,7 @@ header{
 }
 
 .no-limits h5{
-color: hsl(207deg 78% 46%);
+    color: hsl(207deg 78% 46%);
 }
 
 .no-limits p{
@@ -218,9 +246,8 @@ color: hsl(207deg 78% 46%);
     filter: opacity(0.5);
 }
 
-.accessories:hover{
-    filter: opacity(1);
-    border-bottom: 1px solid hsl(207deg 78% 46%);
+.selected{
+    border-bottom: 2px solid hsl(207deg 78% 46%);
 }
 
 /* / new console*/
@@ -266,10 +293,21 @@ color: hsl(207deg 78% 46%);
 .crash-card {
     width: 100%;
     border-radius: 20px;
+    transition: 0.5s;
 }
- .new-card p{
-     margin-top: 20px;
- }
+
+.new-card p{
+    margin-top: 20px;
+}
+
+.tony-card:hover{
+    transform: scale(1.05);
+}
+
+.crash-card:hover{
+    transform: scale(1.05);
+}
+
 
 /* / new game section*/
 
@@ -330,6 +368,11 @@ color: hsl(207deg 78% 46%);
 
 .discount-container img{
     width: 100%;
+    transition: 0.5s;
+}
+
+.discount-container img:hover{
+    transform: scale(1.025);
 }
 
 /* / ps discount*/
@@ -344,9 +387,6 @@ color: hsl(207deg 78% 46%);
 
 .now{
     margin: 5% 0;
-}
-
-.now p{
 }
 
 .now img{
